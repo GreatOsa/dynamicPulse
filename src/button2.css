@@ -1,0 +1,37 @@
+.bigButton {
+    display: flex;
+    gap: 0.5rem;
+    /* justify-content: space-between; */
+    align-items: center;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    justify-items: center;
+    /* font-size: 1rem; */
+    transition: color 0.3s ease;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.bigButton p {
+    display: flex;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    justify-content: center;
+    letter-spacing: 0.2rem;
+}
+
+.bigButton:hover p {
+    color: gold;
+
+}
+
+
+.bigButton .icon {
+    font-size: 2rem;
+
+}
+
+.bigButton:hover .icon {
+    color: var(--pry-color);
+}

@@ -1,0 +1,22 @@
+.button {
+    /* font-size: 1rem; */
+    color: black;
+    /* width: fit-content; */
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 3px solid var(--pry-color);
+    background: var(--pry-color);
+    /* box-shadow: 3px 3px #fafafa; */
+    cursor: pointer;
+}
+
+.button:hover {
+    background: transparent;
+    color: black;
+    /* border-color: #3f0505; */
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
