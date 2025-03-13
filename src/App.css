@@ -28,7 +28,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(https://www.whalesmarketholdings.com/uploads-ssl.webflow.com/61094a65869caa4f3c35df0e/643c145670dd8a63e20bf0c4_6435b746cd3d8d190e7e8fd0_home.png) no-repeat center/cover;
+  background: url('./Assets/643c145670dd8a63e20bf0c4_6435b746cd3d8d190e7e8fd0_home.png') no-repeat center/cover;
   /* Example background image */
   background-size: cover;
   display: flex;
@@ -97,6 +97,10 @@
 }
 
 
+.container {
+  width: 90%;
+  margin: auto;
+}
 
 .propertyList {
   padding: 2.5rem 0;
@@ -106,7 +110,6 @@
 }
 
 .infoCard {
-  width: 90%;
   margin: auto;
   /* background-color: ; */
   padding: 1.4rem;
@@ -140,11 +143,73 @@
   line-height: 1.3rem;
 }
 
+.WhoWeAre {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.WhoWeAre .title {
+  color: var(--pry-color);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding-left: 10px;
+  border-left: 5px solid gold;
+}
+
+.WhoWeAre .question {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.WhoWeAre .question span {
+  color: var(--pry-color);
+}
+
+.WhoWeAre .text {
+  font-size: 1rem;
+}
+
+.WhoWeAre Button {
+  margin-top: 1rem;
+  width: 200px;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+
+}
+
+.WhoWeAreImage {
+  width: 100%;
+  height: 350px;
+}
+
+.WhoWeAreImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.writeUpVisaProcessing {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem
+}
+
+.writeUpVisaProcessing .title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.writeUpVisaProcessing .title span {
+  color: var(--pry-color);
+}
+
 @media (min-width:1000px) {
   .infoContainer {
     width: 50%;
     left: 0;
     margin-left: 3rem;
+
     /* margin: unset; */
   }
 
@@ -170,5 +235,56 @@
   .infoCard h2 {
     font-size: 2rem;
     word-spacing: 100vw;
+  }
+
+  .whoWeAreContainer {
+    height: 80vh;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .WhoWeAre .title {
+    font-size: 1.5rem;
+  }
+
+  .WhoWeAre .question {
+    font-size: 3.5rem;
+  }
+
+  .WhoWeAre .text {
+    font-size: 1.1rem;
+  }
+
+  .WhoWeAre {
+    width: 50%;
+  }
+
+  .WhoWeAreImage {
+    width: 50%;
+    height: 500px;
+  }
+
+  .writeUpVisaProcessingContainer {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .writeUpVisaProcessing {
+    width: 60%;
+    margin: auto;
+  }
+
+  .writeUpVisaProcessing .title {
+    font-size: 3.5rem;
+  }
+
+  .writeUpVisaProcessing .title span {
+    display: block;
+  }
+
+  .writeUpVisaProcessing .text {
+    font-size: 1.2rem;
   }
 }

@@ -1,24 +1,6 @@
-// import React from "react";
-// import "./navbar.css";
-// import Button from "../Button";
-
-// export function Navbar() {
-//   return (
-//     <nav className="Navbar">
-//       <img
-//         src={"https://www.whalesmarketholdings.com/logo.png"}
-//         alt="Whales Market Holdings"
-//       />
-//       <div>
-//         <ul></ul>
-//         <Button name={"Open Account"} />
-//       </div>
-//     </nav>
-//   );
-// }
-
 import { useState } from "react";
 import "./navbar.css";
+import logo from "../Assets/dynamic.png";
 import Button from "../Button";
 
 export function Navbar() {
@@ -26,13 +8,10 @@ export function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="container">
+      <div className=" nav-container">
         {/* Logo */}
         <div className="logo">
-          <img
-            src={"https://www.whalesmarketholdings.com/logo.png"}
-            alt="Whales Market Holdings"
-          />
+          <img src={logo} alt="dynamic pulse trades" />
         </div>
 
         {/* Mobile Menu Toggle */}
